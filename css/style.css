@@ -6,12 +6,17 @@
     background-color: #4b3c3c;
     padding: 25px;
     color: beige;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 .diseñoHeader{
     background-color: #954343;
     border: solid 4px black;
     padding: 50px;
-    border-style: groove
+    border-style: groove;
+    background-image: radial-gradient(circle, green);
 }
 
 .unorderlist1 {
@@ -88,7 +93,10 @@
 .imagen2{
     width: 150px;
     background-color: #954343;
-    background-color: #be0b0b;;
+    background-color: #be0b0b;
+}
+.imagen2:hover{
+    transform: translatey(450px);
 }
 
 .PRUEBA3 {
@@ -175,4 +183,21 @@
 }
 .footer{
     grid-area: footer;
+}
+.botones:hover{
+    transform: skewX(-25deg);
+    transition: 0.4s;
+}
+
+.nombreApellido:focus{
+    transform: scale(1.2);
+    transition: .5s;
+    outline: none;
+    background-color: rgb(10, 166, 214);
+}
+.Mail:focus{
+    transform: scale(1.2);
+    transition: .5s;
+    outline: none;
+    background-color: rgb(10, 166, 214);
 }
