@@ -79,10 +79,14 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  font-size: 35px; }
+  font-size: 35px; 
+  height: 150%;
+}
 
 .PRUEBA2 {
-  width: 250px; }
+  width: 100%;
+  display: inline;
+ }
 
 .imagen2 {
   width: 150px;
@@ -90,15 +94,13 @@
   background-color: #be0b0b; }
 
 .imagen2:hover {
-  transform: translatey(450px); }
+  transform: translatey(419px); }
 
-.PRUEBA3 {
-  background-color: #db2626;
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  border: solid black;
-  border-style: inset; }
+  .PRUEBA3 {
+    margin: 10px;
+    padding: 10px;
+    width: 115px; 
+  }
 
 .links {
   display: flex;
@@ -151,20 +153,26 @@
 
 .grilla {
   display: grid;
-  grid-template-areas: "nav header header header" "nav main2 main2 main2" "nav main2 main2 main2" "footer footer footer footer"; }
+  grid-template-areas: "nav header header header"
+ "nav main2 main2 main2"
+ "nav main2 main2 main2"
+ "footer footer footer footer"; }
 
 .nav {
   grid-area: nav;
-  background-color: #be0b0b; }
+  background-color: #be0b0b;
+ }
 
 .header {
   grid-area: header; }
 
 .main2 {
-  grid-area: main2; }
+  grid-area: main2;
+ }
 
 .footer {
-  grid-area: footer; }
+  grid-area: footer;
+}
 
 .botones:hover {
   transform: skewX(-25deg);
@@ -185,7 +193,9 @@
 .fa-brands {
   border-radius: 10px;
   color: #e0dddd;
-  text-decoration: none; }
+  text-decoration: none; 
+  
+}
 
 .fa-brands:hover {
   transform: scale(1.2);
